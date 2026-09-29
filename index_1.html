@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>キタイチ サポート</title>
+<meta name="description" content="麻雀 期待値・何切る・点数計算アプリ「キタイチ」のサポート、プライバシーポリシー、利用規約">
+<style>
+  :root { --felt: #1F4A3A; --ivory: #f4f1ea; --card: #fff; --text: #222; --sub: #4A4538; --line: #DDD6C8; --gold: #C8841A; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ivory); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; }
+  header { background: #111111; color: #fff; padding: 40px 20px 32px; text-align: center; border-radius: 0 0 28px 28px; }
+  .logo { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 72px; border-radius: 10px; background: #FAF6EC; border-bottom: 5px solid #D6CCB8; color: #C02828; font: bold 24px Georgia, serif; }
+  h1 { margin: 12px 0 4px; font-size: 30px; letter-spacing: 6px; }
+  .sub { color: #F2C879; font-weight: bold; font-size: 13px; }
+  nav { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  nav a { color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.14); }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 60px; }
+  section { background: var(--card); border-radius: 18px; padding: 22px 22px 14px; margin-bottom: 18px; box-shadow: 0 4px 10px rgba(28,42,34,0.08); }
+  h2 { color: var(--felt); font-size: 20px; margin: 0 0 10px; }
+  h3 { font-size: 15px; margin: 18px 0 4px; }
+  p, li { font-size: 14px; color: var(--sub); }
+  ul, ol { padding-left: 1.3em; }
+  .mail { display: inline-block; margin: 6px 0 12px; padding: 10px 18px; border-radius: 999px; background: var(--felt); color: #fff; font-weight: bold; text-decoration: none; }
+  .note { font-size: 12px; color: #777; }
+  footer { text-align: center; font-size: 12px; color: #999; padding-bottom: 30px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">EV</div>
+  <h1>キタイチ</h1>
+  <div class="sub">麻雀 期待値・何切る・点数計算</div>
+  <nav>
+    <a href="#contact">お問い合わせ</a>
+    <a href="#privacy">プライバシーポリシー</a>
+    <a href="#terms">利用規約</a>
+  </nav>
+</header>
+<main>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>キタイチについてのご質問・不具合のご報告は、下記のメールアドレスまでお送りください。不具合の場合は、お使いの端末(iPhoneの機種・iOSのバージョン)と、どの画面で起きたかを書いていただけると助かります。</p>
+  <!-- ▼ ★1: メールアドレスを2か所書き換える -->
+  <a class="mail" href="mailto:kitaichi.app@outlook.jp">kitaichi.app@outlook.jp</a>
+  <p class="note">返信までお時間をいただく場合があります。</p>
+</section>
+
+<section id="privacy">
+  <h2>プライバシーポリシー</h2>
+  <h3>1. はじめに</h3>
+  <!-- ▼ ★2: 運営者名を書き換える(このページ内の3か所) -->
+  <p>キタイチ開発室(以下「運営者」)は、スマートフォンアプリ「キタイチ」(以下「本アプリ」)における利用者の情報の取り扱いを、以下のとおり定めます。</p>
+  <h3>2. 取得する情報</h3>
+  <ul>
+    <li><b>撮影または選択した写真</b>:「手牌を撮る」「写真から選ぶ」を使ったときに限り、その写真1枚を取得します。</li>
+    <li><b>手入力した牌・場況・ルール設定</b>:計算はすべて端末の中で行い、外部には送信しません。</li>
+    <li><b>端末に保存する情報</b>:検討の履歴、練習の記録、設定、無料版の利用回数は、この端末の中だけに保存し、運営者のサーバーには送信しません。アプリを削除すると消えます。</li>
+    <li>氏名、メールアドレス、位置情報、連絡先などの個人を特定できる情報は取得しません。アカウント登録も不要です。</li>
+  </ul>
+  <h3>3. 利用目的</h3>
+  <p>写真は、写っている麻雀牌を読み取り、手牌として画面に表示するためだけに利用します。広告、分析、その他の目的には利用しません。</p>
+  <h3>4. 写真の送信先と保存</h3>
+  <ul>
+    <li>写真は、暗号化された通信で運営者の中継サーバー(Google社のFirebase、東京リージョン)に送信されます。</li>
+    <li>中継サーバーは、読み取りのために、Google Cloud(Vertex AI)で提供されている Anthropic社のAIモデル「Claude」に写真を渡します。</li>
+    <li>読み取りが終わった写真は、運営者のサーバーには保存しません。</li>
+    <li>Google社・Anthropic社での取り扱いは、各社の規約に従います。</li>
+  </ul>
+  <h3>5. 第三者への提供</h3>
+  <p>法令に基づく場合を除き、前項の読み取り処理以外の目的で、写真や入力内容を第三者に提供しません。</p>
+  <h3>6. 共有機能</h3>
+  <p>「問題として共有」「答えを共有」「画像で共有」で作る画像は、端末の中で作られ、利用者が選んだアプリ(LINE、Xなど)に渡されます。運営者のサーバーには送信されません。</p>
+  <h3>7. 本アプリの性質</h3>
+  <p>本アプリは麻雀の検討・学習用のツールです。金銭を賭ける行為を助長するものではありません。</p>
+  <h3>8. ポリシーの変更</h3>
+  <p>内容を変更する場合は、このページでお知らせします。重要な変更は、アプリの更新時にもお知らせします。</p>
+  <h3>9. お問い合わせ</h3>
+  <p>このページの「お問い合わせ」に記載のメールアドレスまでご連絡ください。</p>
+  <!-- ▼ ★3: 公開日を書き換える(このページ内の2か所) -->
+  <p class="note">制定日:2026年10月17日</p>
+</section>
+
+<section id="terms">
+  <h2>利用規約</h2>
+  <h3>第1条(適用)</h3>
+  <p>この規約は、キタイチ開発室(以下「運営者」)が提供するアプリ「キタイチ」(以下「本アプリ」)の利用に関する条件を定めるものです。利用者は、本アプリを利用することで、この規約に同意したものとみなします。</p>
+  <h3>第2条(計算結果について)</h3>
+  <ol>
+    <li>本アプリの期待値・和了率などは、自分だけがツモを続ける一人麻雀を前提とした計算結果であり、実際の対局の結果を保証するものではありません。</li>
+    <li>写真からの牌の読み取りにはAIを利用しており、読み間違いが起きることがあります。計算の前に、読み取った手牌が正しいかを確認してください。</li>
+    <li>点数計算は、設定されたルールに基づくものです。ルールの違いにより、実際の取り決めと異なる場合があります。</li>
+  </ol>
+  <h3>第3条(禁止事項)</h3>
+  <p>利用者は、次の行為をしてはなりません。</p>
+  <ul>
+    <li>賭博その他の法令に違反する行為に、本アプリを利用すること</li>
+    <li>対局中に本アプリを使い、対局の公正を損なうこと</li>
+    <li>本アプリやサーバーに過度な負荷をかける行為、不正に利用する行為</li>
+    <li>本アプリを改変・解析し、または第三者に再配布すること</li>
+  </ul>
+  <h3>第4条(有料版)</h3>
+  <ol>
+    <li>有料版の料金・内容は、App Store の購入画面に表示します。</li>
+    <li>購入・解約・返金は、Apple社の定める方法によります。</li>
+    <li>有料版の機能は、予告なく改善・変更することがあります。</li>
+  </ol>
+  <h3>第5条(免責)</h3>
+  <p>運営者は、本アプリの利用により利用者に生じた損害について、運営者の故意または重大な過失による場合を除き、責任を負いません。</p>
+  <h3>第6条(サービスの変更・終了)</h3>
+  <p>運営者は、事前に告知したうえで、本アプリの内容を変更し、または提供を終了することがあります。</p>
+  <h3>第7条(規約の変更)</h3>
+  <p>運営者は、必要に応じてこの規約を変更できます。変更後の規約は、このページに掲載した時点から効力を持ちます。</p>
+  <h3>第8条(準拠法)</h3>
+  <p>この規約は日本法に従って解釈されます。</p>
+  <p class="note">制定日:2026年10月17日</p>
+</section>
+
+</main>
+<!-- ▼ ★2の3か所目 -->
+<footer>© キタイチ開発室 ─ キタイチ</footer>
+</body>
+</html>
